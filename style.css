@@ -8,6 +8,9 @@
 
 
 @media only screen and (max-width:420px) {
+    header{
+        padding-top: 20px;
+    }
     .container {
         max-width: 420px;
         width: 90%;
@@ -59,9 +62,10 @@
     .header-img {
         width: 343px;
         height: 183px;
-        background-size:cover;
+        background-size: cover;
     }
-    .header-cardimg{
+
+    .header-cardimg {
         width: 99px;
         height: 108px;
         position: relative;
