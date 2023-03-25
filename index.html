@@ -14,12 +14,13 @@
 </head>
 
 <body>
-    <header class="bg-[url('/img/header-bagimg.png')] bg-no-repeat bg-cover">
-        <div class="container mx-auto px-[64px] py-[23px]">
+    <header class="bg-[url('/img/header-bagimg.png')] bg-no-repeat bg-cover h-[552px] sm:h-[1078px]">
+        <div class="container mx-auto px-[20px] sm:px-[64px] sm:py-[23px] py-[10px]">
             <div class="flex items-center justify-between">
-                <a href="#"><img src="./img/icons/header__logo.svg" alt=""></a>
+                <a href="#"><img class="sm:w-[99px] sm:-[38px] w-[67px] h-[26px]" src="./img/icons/header__logo.svg"
+                        alt=""></a>
                 <nav>
-                    <ul class="flex items-center header__ul">
+                    <ul class="sm:flex items-center hidden">
                         <li
                             class="text-white text-[16px] font-[400] leading-[24px]  mx-[20px] duration-[0.6s] hover:text-[#FF3C78;] hover:duration-[0.3s] hover:scale-[1.3]">
                             <a class="py-[12px] px-[16px]" href="#">Home</a></li>
@@ -37,33 +38,41 @@
                             <a class="py-[12px] px-[16px]" href="#">Contact</a></li>
                     </ul>
                 </nav>
-                <img class="header-burger hidden" src="./img/icons/header-burger.svg" alt="">
                 <div class="flex items-center gap-[40px] header__right">
-                    <a class="text-white text-[16px] font-[400] leading-[24px]" href="#">Login</a>
+                    <a class=" sm:block hidden text-white text-[16px] font-[400] leading-[24px]" href="#">Login</a>
                     <button
-                        class="bg-[#FF3C78;] text-[16px] text-white font-[400] leading-[24px] px-[24px] py-[12px] rounded-[16px] hover:bg-white hover:text-black hover:duration-[0.8s] hover:scale-[1.1] duration-[0.4s]">Buy
+                        class="sm:block hidden bg-[#FF3C78;] text-[16px] text-white font-[400] leading-[24px] px-[24px] py-[12px] rounded-[16px] hover:bg-white hover:text-black hover:duration-[0.8s] hover:scale-[1.1] duration-[0.4s]">Buy
                         Nesa</button>
+                    <img class=" sm:hidden block header-burger " src="./img/icons/header-burger.svg" alt="">
                 </div>
             </div>
-            <div class="mt-[68px] flex header__bottom--wrapper items-center justify-between">
-                <h1 class="text-white text-[74px] header-bottom-title font-[900] w-[480px] tracking-[-0.042em;] leading-[81px] "><span
-                        class="font-[300]">Teams
+            <div class="sm:mt-[68px] mt-[30px] flex sm:items-center justify-between">
+                <h1
+                    class="text-white sm:text-[74px] font-[900] sm:w-[480px] sm:tracking-[-0.042em;] sm:leading-[81px]  text-[24px] leading-[32px] w-[162px]">
+                    <span class="font-[300]">Teams
                         Build</span>
                     Better Products
                     With Nisa</h1>
                 <div>
-                    <p class="text-white leading-[26px] header-bottom-text font-[400] w-[456px]">Nisa is constantly improving to move
+                    <p
+                        class="text-white  sm:text-[14px] sm:leading-[26px]  font-[400] sm:w-[456px] w-[161px] text-[12px] leading-[18px]">
+                        Nisa is constantly
+                        improving to move
                         forward through dashboard, statistics, data and verify and
                         superior <br> human resources.</p>
                     <button
-                        class="hover:scale-[1.1] header-bottom-btn hover:bg-pink-500/80 hover:duration-[0.6s] duration-[0.8s]  flex items-center mt-[30px] bg-[#FF3C78;] text-white font-[500] leading-[24px] rounded-[14px] px-[32px] py-[16px]">Get
-                        Started <img class="ml-[24px]" src="./img/icons/vector-right.svg" alt=""></button>
+                        class="hover:scale-[1.1] header-bottom-btn hover:bg-pink-500/80 hover:duration-[0.6s] duration-[0.8s]  flex items-center mt-[30px] bg-[#FF3C78;] text-white font-[500] leading-[24px] rounded-[14px] px-[24px] sm:px-[32px] py-[12px] sm:py-[16px]">Get
+                        Started <img class="sm:ml-[24px] ml-[16px]" src="./img/icons/vector-right.svg" alt=""></button>
                 </div>
             </div>
         </div>
-        <div class="bg-[url('/img/header-bottom-img.png')] header-img w-[1040px] h-[474px] mx-auto mt-[80px]">
-            <img class="relative header-cardimg left-[724px] top-[130px]" src="./img/Info-card.png" alt="">
+        <div class="bg-[url('/img/header-bottom-img.png')] sm:block hidden sm:w-[1040px] sm:h-[474px] mx-auto
+            sm:mt-[80px] mt-[44px] min-w-[370px] w-[100%] object-cover h-[183px]">
+            <div>
+                <img class="relative  left-[724px] top-[130px]" src="./img/Info-card.png" alt="">
+            </div>
         </div>
+        <img class="sm:hidden block mx-auto mt-[44px]" src="./img/mobile-img.png" alt="">
     </header>
 </body>
 
