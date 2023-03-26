@@ -5,8 +5,3 @@
     font-family: 'Roboto';
     font-style: normal;
 }
-
-.card__wrapper:hover p {
-    color: white;
-    transition: all ease 0.3s;
-}
